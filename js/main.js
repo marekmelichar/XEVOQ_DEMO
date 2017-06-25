@@ -36,6 +36,8 @@
     $('html').addClass('has-scrollbar');
   }
 
+  $('.nav_point_1').toggleClass('fill')
+
 
   var slideshow = $('.slideshow'),
       slides = $('.slide')
@@ -51,13 +53,23 @@
 
   slideshow.children(':not(:first)').hide()
 
-  triggersArray.forEach(itm => {
+  triggersArray.forEach((itm, i) => {
 
     itm.on('click', function() {
       itm.parent().fadeOut(600, function(){
 
       }).next().fadeIn(600)
-      console.log(itm.parent());
+      console.log(triggersArray, itm.selector, `.icon-slide-demo_${triggersArray.length - 2}-cursor`);
+
+      if (itm.selector === `.icon-slide-demo_1-cursor`) {
+        $('.nav_point_2').toggleClass('fill')
+      }
+
+      if (itm.selector === `.icon-slide-demo_${triggersArray.length - 2}-cursor`) {
+        $(tryAgainBtn).css('opacity', '1')
+      }
+
+
     })
   })
 
