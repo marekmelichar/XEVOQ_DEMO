@@ -36,7 +36,7 @@
     $('html').addClass('has-scrollbar');
   }
 
-  $('.nav_point_1').toggleClass('fill')
+  $('.nav_point_1').addClass('fill')
 
 
   var slideshow = $('.slideshow'),
@@ -59,10 +59,14 @@
       itm.parent().fadeOut(600, function(){
 
       }).next().fadeIn(600)
-      console.log(triggersArray, itm.selector, `.icon-slide-demo_${triggersArray.length - 2}-cursor`);
+      console.log(itm.selector);
 
       if (itm.selector === `.icon-slide-demo_1-cursor`) {
         $('.nav_point_2').toggleClass('fill')
+      }
+
+      if (itm.selector === `.icon-slide-demo_2-cursor`) {
+        $('.nav_point_3').toggleClass('fill')
       }
 
       if (itm.selector === `.icon-slide-demo_${triggersArray.length - 2}-cursor`) {
