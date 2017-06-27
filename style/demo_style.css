@@ -65,7 +65,7 @@ html.has-scrollbar {
   max-width: 300px;
   width: 100%;
   position: relative;
-  top: 72px;
+  top: 80px;
   left: 40px;
   color: #fff;
   font-weight: bold;
@@ -204,10 +204,52 @@ html.has-scrollbar {
     height: 378px;
   }
 
+  .slideshow .slide {
+    left: 56%;
+    top: -2.5%;
+  }
+
   .slideshow .slide img {
     max-width: 2000px;
     width: 496px;
     margin: 35px 0 0 1px;
+  }
+
+  .nav_point_1:after {
+    left: 20px;
+  }
+
+  .nav_point_2:before {
+    left: 60px;
+  }
+
+  .nav_point_2:after {
+    left: 90px;
+  }
+
+  .nav_point_3:before {
+    left: 130px;
+  }
+
+  .nav_point_3:after {
+    left: 160px;
+  }
+
+  #try-again-demo {
+    right: -110px;
+    font-size: 14px;
+    top: 55px;
+  }
+
+  #demo:after {
+    height: 180px;
+    bottom: -90px;
+  }
+
+  .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
+    /*top: 40px;
+    left: 100px;
+    font-size: 14px;*/
   }
 
 }
@@ -215,9 +257,51 @@ html.has-scrollbar {
 @media screen and (max-width: 767px) {
 
   .slideshow .slide {
-    top: 31%;
-    max-width: 240px;
+    top: 9%;
+    max-width: 280px;
     width: 100%;
+  }
+
+  .slideshow {
+    height: 220px;
+    margin-top: -30px;
+  }
+
+  .nav_point_1:after {
+    left: 20px;
+  }
+
+  .nav_point_2:before {
+    left: 60px;
+  }
+
+  .nav_point_2:after {
+    left: 90px;
+  }
+
+  .nav_point_3:before {
+    left: 130px;
+  }
+
+  .nav_point_3:after {
+    left: 160px;
+  }
+
+  #try-again-demo {
+    right: -110px;
+    font-size: 14px;
+    top: 55px;
+  }
+
+  #demo:after {
+    height: 180px;
+    bottom: -90px;
+  }
+
+  .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
+    top: 40px;
+    left: 100px;
+    font-size: 14px;
   }
 
 }
