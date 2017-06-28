@@ -212,7 +212,7 @@ html.has-scrollbar {
   .slideshow .slide img {
     max-width: 2000px;
     width: 496px;
-    margin: 35px 0 0 1px;
+    margin: 39px 0 0 -70px;
   }
 
   .nav_point_1:after {
@@ -236,7 +236,7 @@ html.has-scrollbar {
   }
 
   #try-again-demo {
-    right: -110px;
+    right: -257px;
     font-size: 14px;
     top: 55px;
   }
@@ -247,9 +247,9 @@ html.has-scrollbar {
   }
 
   .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
-    /*top: 40px;
-    left: 100px;
-    font-size: 14px;*/
+    position: absolute;
+    top: 410px;
+    left: 370px;
   }
 
 }
@@ -302,6 +302,20 @@ html.has-scrollbar {
     top: 40px;
     left: 100px;
     font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 321px) {
+
+  .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
+      top: 86px;
+      left: -70px;
+      font-size: 14px;
+  }
+
+  #try-again-demo {
+    top: 66px;
   }
 
 }
