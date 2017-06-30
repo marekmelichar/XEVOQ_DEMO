@@ -304,6 +304,10 @@ html.has-scrollbar {
     font-size: 14px;
   }
 
+  .icon-slide-demo_1-cursor, .icon-slide-demo_2-cursor {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 @media screen and (max-width: 321px) {
