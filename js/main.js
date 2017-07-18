@@ -1,5 +1,15 @@
 (function($, window, document) {
 
+  // $(".slideshow li").sort(function (a, b) {
+  //   return parseInt(a.id) > parseInt(b.id);
+  // }).each(function () {
+  //   var elem = $(this);
+  //   elem.remove();
+  //   $(elem).appendTo(".slideshow");
+  // });
+
+
+
   var hasScrollbar = function() {
     // The Modern solution
     if (typeof window.innerWidth === 'number')
@@ -44,7 +54,12 @@
       index = 0,
       trigger = '',
       triggersArray = [],
-      tryAgainBtn = $('#try-again-demo');
+      tryAgainBtn = $('#try-again-demo')
+
+      // slides.detach().sort( (a, b) => {
+      //   console.log($(a), $(b))
+      //   // return $(a).id - $(b).id
+      // })
 
   while (index <= slides.length) {
     trigger = $(`.icon-slide-demo_${index++}-cursor`)
@@ -55,11 +70,13 @@
 
   triggersArray.forEach((itm, i) => {
 
+    // console.log(itm);
+
     itm.on('click', function() {
       itm.parent().fadeOut(600, function(){
 
       }).next().fadeIn(600)
-      console.log(itm.selector);
+      // console.log(itm.selector);
 
       if (itm.selector === `.icon-slide-demo_1-cursor`) {
         $('.nav_point_2').toggleClass('fill')
@@ -77,13 +94,7 @@
     })
   })
 
-  // slideshow.children(':not(:first)').hide()
-  //
-  // slides.on('click', function(){
-  //   slideshow.children(':first').fadeOut(600, function(){
-  //     $(this).appendTo( slideshow )
-  //   }).next().fadeIn(600)
-  // })
+
 
 
 

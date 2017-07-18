@@ -191,6 +191,32 @@ html.has-scrollbar {
   /*display: none;*/
 }
 
+@keyframes pulse {
+  0% {
+    font-size: 2em;
+  }
+  100% {
+    font-size: 2.25em;
+  }
+}
+
+.pulse {
+  /* animation: pulse 2s ease-in-out 0 infinite alternate; */
+  /*animations*/
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  font-size: 1.25em;
+  top: 116%;
+  left: 33%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 
 
 
@@ -248,8 +274,10 @@ html.has-scrollbar {
 
   .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
     position: absolute;
-    top: 410px;
-    left: 370px;
+    /*top: 410px;
+    left: 370px;*/
+    top: 404px;
+    left: 110px;
   }
 
 }
@@ -299,8 +327,10 @@ html.has-scrollbar {
   }
 
   .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
-    top: 40px;
-    left: 100px;
+    /*top: 40px;
+    left: 100px;*/
+    top: 275px;
+    left: -90px;
     font-size: 14px;
   }
 
@@ -313,7 +343,8 @@ html.has-scrollbar {
 @media screen and (max-width: 321px) {
 
   .icon-slide-demo_1-text, .icon-slide-demo_2-text, .icon-slide-demo_3-text {
-      top: 86px;
+      /*top: 86px;*/
+      top: 276px;
       left: -70px;
       font-size: 14px;
   }
